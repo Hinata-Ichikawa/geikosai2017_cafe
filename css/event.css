@@ -1,5 +1,14 @@
 /* cafe color #ff9794 */
 /* cafe font UtsukushiFONT.otf */
+@font-face {
+  font-family: 'UtsukushiFONT.otf';
+  src: url(../font/UtsukushiFONT.otf);
+}
+
+#panel-cafe{
+  font-family: 'UtsukushiFONT.otf';
+}
+
 .sub-nav {
   margin-bottom: 10px;
 }
@@ -26,9 +35,9 @@
   overflow-y: hidden;
 }
 
-#panels section main img{
+/*#panels section main img{
   width: 100%;
-}
+}*/
 
 #stage:checked ~ #panels #panel-stage main,
 #cafe:checked ~ #panels #panel-cafe main,
@@ -50,4 +59,97 @@
 
 .panel-radios {
   display: none;
+}
+
+
+
+
+
+
+
+.text-orange{
+  color: #f08d24;
+}
+
+.text-black{
+  color: #000;
+}
+
+#panel-cafe main{
+  position: relative;
+  width: 940px;
+  background-image: url("../images/event/cafe-background.png");
+}
+
+.top-box{
+  position: relative;
+  width: 940px;
+  height: 350px;
+}
+
+.top-box img{
+  display: block;
+  width: 80%;
+  margin: 100px auto;
+
+}
+
+.line{
+  width: 100%;
+}
+
+.menu-top{
+  position: relative;
+  width: 940px;
+  height: 400px;
+  text-align: center;
+}
+
+.lunch-text{
+  width: 30%;
+  margin-top: 50px;
+}
+
+.lunch-menu{
+  width: 100%;
+  float: left;
+}
+
+.menu-bottom{
+  position: relative;
+  width: 940px;
+  float: left;
+}
+
+.menu-bottom img{
+  position: absolute;
+}
+
+.dessert, .limited-plate{
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+}
+
+.dessert-title{
+  width: 30%;
+  left: 100px;
+  top: 20px;
+  z-index: 10;
+}
+
+.dessert1{
+  left: 160px;
+  top: 0px;
+}
+
+.dessert2{
+  left: 280px;
+  top: 150px;
+}
+
+.dessert3{
+  left: 40px;
+  top: 150px;
 }
