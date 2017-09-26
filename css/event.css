@@ -62,7 +62,7 @@
 }
 
 .header{
-  z-index: 9999;
+  z-index: 1;
 }
 
 
@@ -86,6 +86,7 @@
   position: relative;
   width: 940px;
   background-image: url("../images/event/cafe-background.png");
+  background-size: 100%;
 }
 
 .top-box{
@@ -166,6 +167,7 @@
   left: 250px;
   top: 90px;
   font-size: 12px;
+  line-height: 20px;
 }
 
 .limited-img{
@@ -184,6 +186,7 @@
   left: 50px;
   top: 300px;
   font-size: 12px;
+  line-height: 20px;
 }
 
 .special-img{
