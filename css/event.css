@@ -70,36 +70,57 @@
 
 
 
-.text-orange{
-  color: #f08d24;
+.text-cafe-red{
+  color: #c84a2c;
 }
 
-.text-black{
-  color: #000;
+.text-cafe-black{
+  color: #231815;
 }
 
 .text-pink{
   color: #ff9794;
 }
 
+.right{
+  text-align: right;
+}
+
 #panel-cafe main{
   position: relative;
-  width: 940px;
+  width: 100%;
   background-image: url("../images/event/cafe-background.png");
-  background-size: 100%;
+  background-size: cover;
 }
 
 .top-box{
   position: relative;
-  width: 940px;
-  height: 300px;
+  width: 80%;
+  margin: 70px auto;
+  display: flex;
+  align-items: center;
 }
 
-.top-box img{
-  display: block;
-  width: 70%;
-  margin: 100px auto;
+.cafe-logo-box{
+  width: 250px;
+  margin: 0px 40px;
+}
 
+.top-text{
+  width: 360px;
+  margin-left: 40px;
+}
+
+.top-text-title{
+  margin-bottom: 40px;
+}
+
+.top-text-subtitle{
+  line-height: 30px;
+}
+
+.br-sp{
+  display: none;
 }
 
 .line{
@@ -108,8 +129,7 @@
 
 .menu-top{
   position: relative;
-  width: 940px;
-  height: 350px;
+  width: 100%;
   text-align: center;
 }
 
@@ -125,7 +145,7 @@
 
 .menu-bottom{
   position: relative;
-  width: 940px;
+  width: 100%;
   float: left;
 }
 
@@ -202,7 +222,7 @@
 
 .bottom-box{
   position: relative;
-  width: 940px;
+  width: 100%;
   height: 400px;
   text-align: center;
 }
@@ -220,4 +240,162 @@
 .bottom-text{
   font-size: 12px;
   margin-top: 50px;
+}
+
+@media (max-width: 750px){
+  #panel-cafe main{
+    background-image: url("../images/sp/cafe-sp-background.png");
+  }
+
+  .top-box{
+    position: relative;
+    width: 80%;
+    margin: 15vh auto 0vh;
+    display: block;
+  }
+
+  .cafe-logo-box{
+    width: 100%;
+    margin: 10vh 0vh;
+    text-align: center;
+  }
+
+  .cafe-logo{
+    width: 80%;
+  }
+
+  .top-text{
+    width: 100%;
+    margin-left: 0vh;
+  }
+
+  .top-text-title{
+    font-size: 5.5vw;
+    margin-bottom: 30px;
+    letter-spacing: 0.5vw;
+  }
+
+  .top-text-subtitle{
+    font-size: 4vw;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.5vw;
+  }
+
+  .br-sp{
+    display: block;
+  }
+
+  .lunch-text{
+    width: 80%;
+    margin-top: 10vh;
+  }
+
+  .lunch-menu{
+    float: none;
+  }
+
+  .lunch-menu img{
+    width: 65%;
+    margin: 2vh 0vh;
+  }
+
+  .menu-bottom{
+    position: relative;
+    float: none;
+  }
+
+  .menu-bottom img{
+    position: static;
+  }
+
+  .dessert,
+  .limited-plate{
+    position: relative;
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .dessert-title{
+    display: block;
+    margin: 2vh auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .dessert-menu img{
+    display: block;
+    width: 90%;
+    margin: 5vh auto;
+  }
+
+  .limited-title{
+    position: static;
+    display: block;
+    width: 100%;
+    margin: 3vh auto;
+  }
+
+  .limited-text{
+    position: static;
+    text-align: center;
+    font-size: 3vw;
+    line-height: 2vh;
+    letter-spacing: 0.3vw;
+  }
+
+  .limited-img{
+    position: static;
+    display: block;
+    width: 80%;
+    margin: 1vh auto;
+  }
+
+  .special-title{
+    position: static;
+    display: block;
+    margin: 3vh auto;
+    width: 60%;
+  }
+
+  .special-text{
+    position: static;
+    font-size: 3vw;
+    line-height: 2vh;
+    letter-spacing: 0.3vw;
+    text-align: center;
+  }
+
+  .special-img{
+    position: static;
+    display: block;
+    width: 80%;
+    margin: 1vh auto 6vh;
+  }
+
+  .bottom-box{
+    position: relative;
+    height: auto;
+    text-align: center;
+  }
+
+  .cafe-hours{
+    width: 70%;
+    margin: 5vh 0vw 0vh; 
+  }
+
+  .date{
+    font-size: 6vw;
+    letter-spacing: 0vh;
+    margin: 5vh 0vw;
+  }
+
+  .bottom-text{
+    font-size: 3.5vw;
+    letter-spacing: 0.3vw;
+    margin-bottom: 10vh;
+  }
+
 }
